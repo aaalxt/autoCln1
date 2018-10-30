@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test" configfailurepolicy="continue">
+    <test name="查询接口">
+        <classes>
+            <!-- 事件管理-->
+            <class name="demo.searchTaskTest"/>
+        </classes>
+    </test>
+
+
+    <test name="测试接口">
+        <classes>
+            <!-- 事件管理-->
+            <class name="demo.searchTaskTest2"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+
+
+
+</suite>
+
+
